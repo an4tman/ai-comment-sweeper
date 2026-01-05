@@ -1,0 +1,39 @@
+{
+  "name": "ai-comment-sweeper",
+  "version": "0.1.0",
+  "description": "CLI tool to remove AI-generated meta-commentary, stale comments, and ephemeral documentation from codebases",
+  "main": "dist/index.js",
+  "bin": {
+    "ai-comment-sweeper": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "comments",
+    "cleanup",
+    "code-quality",
+    "llm",
+    "documentation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}
