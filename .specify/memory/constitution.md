@@ -1,19 +1,17 @@
 <!--
 SYNC IMPACT REPORT
 ==================
-Version change: [UNVERSIONED] → 1.0.0
-Modified principles: N/A (initial version)
-Added sections:
-  - Core Principles (5 principles)
-  - Security & Safety Standards
-  - Development Workflow
-  - Governance
-Removed sections: N/A (initial version)
+Version change: 1.0.0 → 1.1.0
+Modified principles: Code Quality Standards (TypeScript → Python)
+Added sections: None
+Removed sections: None
 Templates requiring updates:
-  ✅ plan-template.md - reviewed, Constitution Check section aligns
-  ✅ spec-template.md - reviewed, requirement patterns align
-  ✅ tasks-template.md - reviewed, task categorization aligns
+  ✅ plan-template.md - no changes needed (language-agnostic)
+  ✅ spec-template.md - no changes needed (language-agnostic)
+  ✅ tasks-template.md - no changes needed (language-agnostic)
 Follow-up TODOs: None
+Rationale for MINOR bump: Language decision is materially expanded guidance
+  affecting implementation but not a breaking change to governance principles.
 ==================
 -->
 
@@ -140,8 +138,9 @@ Follow-up TODOs: None
 
 ### Code Quality Standards
 
-- **Language**: TypeScript for type safety and ecosystem compatibility (per ROADMAP.md open questions)
-- **Linting**: ESLint and Prettier for consistent formatting
+- **Language**: Python 3.11+ for superior LLM library ecosystem (LiteLLM), text processing capabilities, and rapid development iteration
+- **Type Safety**: Type hints required for all function signatures; mypy strict mode enabled
+- **Code Quality**: Black for formatting, Ruff for linting, pre-commit hooks for automated checks
 - **Comments**: Follow aggressiveness philosophy—comment non-obvious logic, algorithms, security/performance considerations; avoid restating code
 - **Modularity**: Clear separation of concerns: CLI → Safety → Config → Scanner → Processors → Cache → Output
 - **Error Messages**: Clear, actionable error messages that guide users to resolution
@@ -173,4 +172,4 @@ This constitution supersedes all other practices, documentation, and conventions
 
 Development guidance for AI agents (Claude) is maintained in `CLAUDE.md`. This file provides implementation context, component architecture, and development notes that complement constitutional principles.
 
-**Version**: 1.0.0 | **Ratified**: 2026-01-05 | **Last Amended**: 2026-01-05
+**Version**: 1.1.0 | **Ratified**: 2026-01-05 | **Last Amended**: 2026-01-07
